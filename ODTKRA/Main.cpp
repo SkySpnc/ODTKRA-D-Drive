@@ -44,7 +44,7 @@ void ODT_CLI()
 DebugToolCLI.exe\"");
 
 	//Turn off ASW, we do not need it
-	system("echo server: asw.Off | \"D:\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\"");
+	system("echo server: asw.Off | \"D:\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\");
 
 	//Clear screen
 	system("cls");
