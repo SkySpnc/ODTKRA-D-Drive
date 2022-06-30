@@ -6,7 +6,7 @@
 void killODT(int param)
 {
 	//Reverse ODT cli commands
-	system("echo service set-pixels-per-display-pixel-override 1 | \"C:\\Program Files\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\"");
+	system("echo service set-pixels-per-display-pixel-override 1 | \"D:\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\"");
 
 	LPCWSTR Target_window_Name = L"Oculus Debug Tool";
 	HWND hWindowHandle = FindWindow(NULL, Target_window_Name);
@@ -20,7 +20,7 @@ void killODT(int param)
 void start_ODT(HWND& hWindowHandle, LPCWSTR& Target_window_Name)
 {
 	// Starts ODT
-	ShellExecute(NULL, L"open", L"C:\\Program Files\\Oculus\\Support\\oculus-diagnostics\\OculusDebugTool.exe", NULL, NULL, SW_SHOWDEFAULT);
+	ShellExecute(NULL, L"open", L"D:\\Oculus\\Support\\oculus-diagnostics\\OculusDebugTool.exe", NULL, NULL, SW_SHOWDEFAULT);
 	Sleep(1000); // not sure if needed
 
 	hWindowHandle = FindWindow(NULL, Target_window_Name);
@@ -40,10 +40,11 @@ void start_ODT(HWND& hWindowHandle, LPCWSTR& Target_window_Name)
 void ODT_CLI()
 {
 	//Sets "set-pixels-per-display-pixel-override" to 0.01 to decrease performance overhead
-	system("echo service set-pixels-per-display-pixel-override 0.01 | \"C:\\Program Files\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\"");
+	system("echo service set-pixels-per-display-pixel-override 0.01 | \"D:\\Oculus\\Support\\oculus-diagnostics\\Oculus
+DebugToolCLI.exe\"");
 
 	//Turn off ASW, we do not need it
-	system("echo server: asw.Off | \"C:\\Program Files\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\"");
+	system("echo server: asw.Off | \"D:\\Oculus\\Support\\oculus-diagnostics\\OculusDebugToolCLI.exe\"");
 
 	//Clear screen
 	system("cls");
