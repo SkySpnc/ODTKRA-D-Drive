@@ -1,3 +1,5 @@
+# [This is now outdated. Use the upstream version of this instead.](https://github.com/DeltaNeverUsed/ODTKRA)
+
 # ODTKRA D
 Uses the Oculus Debug Tool to keep your rift from going to sleep for installs located in D:\Oculus
 
